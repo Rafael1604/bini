@@ -87,19 +87,46 @@
 
 
 /*FIXED EYY BUTTON THAT MAKE YOU BACK TO THE TOP OF THE WEB*/
-.eyy-parent{
+/* Fixed "Back to Top" Button */
+.eyy-parent {
     position: fixed;
     right: 20px;
-    bottom: 5px;
-    
-        
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
-.eyy img{
-    border-radius: 20px; 
-    transition: 500ms; 
-    z-index: 3;
-    overflow: hidden;
+
+.eyy img {
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 60px; /* Default size for desktop */
+    height: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
+
+.eyy img:hover {
+    transform: scale(1.1); /* Slight grow effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .eyy img {
+        width: 50px; /* Slightly smaller for tablets */
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eyy img {
+        width: 40px; /* Smaller size for mobile screens */
+        height: 40px;
+    }
+}
+
 
 main{
     background-color: rgb(46, 46, 46);
