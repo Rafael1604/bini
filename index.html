@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <!--THIS WEBPAGE CREATED BY RAFAEL D PAGSANGJAN-->
     <title>PPOP MUSIC</title>
-    <link rel="stylesheet" href="info.css">
-
+    <link rel="stylesheet" href="style.css">
     <style>
         body{
-    margin: 0 auto;
-    padding: 2px;
     scroll-behavior: smooth;
     background-color: rgb(24, 22, 19);/*OFFICIAl choice na BG*/
-    position: relative;
-}
-  
-header{
-    width: 100%;
-    padding: 10px;
-    background: rgb(223, 230, 255);
-    text-align: center;
-    font-weight: 500;
 }
 
-.header{
-    background-color: ;
-    
+.main-content {
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+.who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#imgpp {
+    border-radius: 20px;
+    border: 4px solid #7f0e96;
+    box-shadow: 3px 3px 3px black;
+    width: 100%;
+    max-width: 500px;
+}
+
+#pp p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+    #pp p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #pp p {
+        font-size: 14px;
+    }
+}
+
+/*THE NATIONS GIRL GROUP BINI*/
 .header h2{
     padding: 0;
     padding-top: 22px;
@@ -43,8 +78,13 @@ header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: 120ms;
     padding: 3px;
-    color: rgb(224, 126, 34);
+    color: rgb(240, 123, 14);
 }
+
+
+
+
+
 
 /*FIXED EYY BUTTON THAT MAKE YOU BACK TO THE TOP OF THE WEB*/
 .eyy-parent{
@@ -72,92 +112,83 @@ main{
     justify-content: center;
     color: rgb(255, 255, 255);
     padding-left: 2px;
-    
-    
 
 }
-#imgpp{
-    border-radius: 20px;
-    border: 4px solid #7f0e96;
-    box-shadow: 3px 3px 3px black;
-}
-
-#pp{
-    top: 0;
-    width: 500px;
-}
-
-    
-
-
-
-
-
-
-
-.tbl{
-    
+.tbl {
     display: flex;
-    background-color: rgb(24, 22, 19);
-    height: 850vh;
-    padding: 100px;
-    padding-top: 20px;
-    table-layout: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
     width: 100%;
-    margin: 0;
-    
+    max-width: 600px;
 }
 
-.tbl img{/*big images*/
-    border-radius: 40px;
-    z-index:;
+.bimg {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
-.tbl img:hover{
-    box-shadow: 2px 2px 3px #7f0e96;
+.position-desc {
+    margin-bottom: 10px;
 }
 
-
-.tbl tr td .bimg{
-    padding: 10px;
-    
-    text-align: center;
-    
-}
-
-.position-desc p{ /*paragraph description*/
-    font-size: 20px;
-    padding-top: 100px;
-    
-
-
-}
-.pdesc { /* description text in every image*/
-    padding-left: 20px;
-    transition: 200ms;
+.pdesc {
     color: #f3ffff;
-    
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-
-.other{
+.other {
     display: flex;
-    text-decoration: none;
-
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-.other img{
-    border-radius: 20px;
-    padding: 5px;
-
+.img-glow {
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 
-.img-glow:hover{
-    width: 140px;
-    height: 240px;
-    transition: 1 ease 250ms;
+.img-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(127, 14, 150, 0.6);
+}
+
+@media (max-width: 768px) {
+    .member {
+        max-width: 90%;
+    }
+
+    .bimg, .img-glow {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdesc {
+        font-size: 16px;
+    }
+
+    .other {
+        gap: 5px;
+    }
+}
     
-}
+
+
 
 
 footer{
@@ -165,21 +196,13 @@ footer{
     text-align: center;
     padding: 20px;
 }
- 
+        
     </style>
-    
-
-
 </head>
 <body>
-    
-    
-
 <div class="header" id="top">
     <center>
-
         <h2 valign="middle" title="THIS WEBSITE IS IN CATEGORY OF CELEBRITY OR ARTIST AND MUSIC">THE NATIONS GIRL GROUP BINI</h2>
-
         <div class="namess" title="If you click this you will go to the person name that you select or click">
             <a href="#jhoanna">JHOANNA</a>
             <a href="#colet">COLET</a>
@@ -196,304 +219,325 @@ footer{
                 <a href="#top" title="If you click this you will go to the top of webpage"><img src="https://i.pinimg.com/736x/55/ac/f5/55acf54ede2465f720ed6b423baac2d7.jpg" alt="" width="50px" height="50px"></a>
             </div>
         </div>
+
     </center>
 </div>
 
-    <main>
-        <div class="who" title="THIS WEBSITE IS IN CATEGORY OF CELEBRITY OR ARTIST AND MUSIC">
-            <div ><img id="imgpp" src="https://i.pinimg.com/736x/bd/89/f7/bd89f74b09e390579e6c88f119a00e84.jpg" width="500px"; alt=""></div>
-            <div id="pp"><p>
+
+<main class="main-content">
+    <div class="who">
+        <img id="imgpp" src="https://i.pinimg.com/736x/bd/89/f7/bd89f74b09e390579e6c88f119a00e84.jpg" width="500px" alt="BINI group image">
+        <div id="pp">
+            <p>
                 BINI is an eight-member P-Pop group from ABS-CBN's Star Magic that debuted in June 2021. <br>
                 BINI draws inspiration from classic pop and hip-hop vibes and even sprinkles in some traditional Filipino sounds. <br>
-                 Think fun beats that make you want to dance, mixed with heartfelt messages that stick with you long after the song is over. <br>
-                 From Born to Win to viral sensations,
-
-            </p></div>
+                Think fun beats that make you want to dance, mixed with heartfelt messages that stick with you long after the song is over.
+            </p>
         </div>
-
-    </main>
-    
-
+    </div>
+</main>
 
 
-
-        <table class="tbl" width="100%" >
-
-            <tr valign="top">
-                <td id="aiah"><img class="bimg"src="https://i.pinimg.com/736x/f6/f6/1a/f6f61afcc2ab9cb3f1adced5f3b56871.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc"> <!--h3 to big insdie the p, tr add a valign top each-->
-                             <big>Maraiah Queen Arceta</big><br>
-                             <br>
-                        Aiah is the group’s eldest member. <br>
-                        She’s the visual, main rapper, and sub-vocalist. <br>
-                        She’s known for her soft and dreamy voice and bright personality. <br>
-                        Fans who’ve met her agree; they all say she’s very approachable.
-                        </p>
-                    </div>
-                    
+    <div class="tbl">
+        <div class="member" id="aiah">
+            <img class="bimg" src="https://i.pinimg.com/736x/f6/f6/1a/f6f61afcc2ab9cb3f1adced5f3b56871.jpg" alt="" width="200px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Maraiah Queen Arceta</big><br><br>
+                    Aiah is the group’s eldest member.<br>
+                    She’s the visual, main rapper, and sub-vocalist.<br>
+                    She’s known for her soft and dreamy voice and bright personality.<br>
+                    Fans who’ve met her agree; they all say she’s very approachable.
+                </p>
+            </div>
             <div class="other">
-                        <a href="https://i.pinimg.com/736x/0c/8b/c7/0c8bc7786f5be43f76582d4a313fe267.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/736x/0c/8b/c7/0c8bc7786f5be43f76582d4a313fe267.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/69/a0/59/69a059d5268184be839865f660554002.jpg" target="_blank"><img class="img-glow" src="https://i.pinimg.com/736x/69/a0/59/69a059d5268184be839865f660554002.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/ca/b1/42/cab142d09c7585c809f088ae1203cea5.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/736x/ca/b1/42/cab142d09c7585c809f088ae1203cea5.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/2c/e6/c8/2ce6c84ddee78e3901d031cd67f204f7.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/736x/2c/e6/c8/2ce6c84ddee78e3901d031cd67f204f7.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/f7/50/05/f750051e9fb2e8d5737af79d37448d80.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/564x/f7/50/05/f750051e9fb2e8d5737af79d37448d80.jpg" alt="" width="100px" height="180"></a> 
-                        <a href="https://i.pinimg.com/736x/05/19/10/0519104a59c1bc0bb66b863d4e49a533.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/736x/05/19/10/0519104a59c1bc0bb66b863d4e49a533.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/f3/e7/40/f3e740e700598cc77b4e276e90c75020.jpg" target="_blank"><img  class="img-glow" src="https://i.pinimg.com/736x/f3/e7/40/f3e740e700598cc77b4e276e90c75020.jpg" alt="" width="100px" height="180"></a>
-                        </div>
-                        </td>
-            </tr>
+                <a href="https://i.pinimg.com/736x/0c/8b/c7/0c8bc7786f5be43f76582d4a313fe267.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/0c/8b/c7/0c8bc7786f5be43f76582d4a313fe267.jpg" alt="" width="100px" height="180">
+                </a>
 
-            <tr valign="top">
-                <td id="colet">
-                    <img class="bimg" src="https://i.pinimg.com/736x/dc/13/b0/dc13b0106b1044d077014269c767b8d1.jpg" alt="" width="400px"></td>
-                
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc">
-                        <big>Nicolette Vergara</big><br>
-                        <br>
-                            Colet is the group's main vocalist, lead dancer, and lead rapper. <br>
-                            She brings fierce energy and sharp dance moves to the stage. <br>
-                            Fans think Colet has a strong personality on-stage, <br>
-                            but is actually maalaga towards the members. <br>
-                            She’s also known as one of the tidiest members. <br>
+                <a href="https://i.pinimg.com/736x/69/a0/59/69a059d5268184be839865f660554002.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/69/a0/59/69a059d5268184be839865f660554002.jpg" alt="" width="100px" height="180">
+                </a>
 
-                        
-                        </p>
-                </div>
-                    
-            <div class="other">
-                        <a href="https://i.pinimg.com/564x/38/24/4a/38244a3b3288862b1bec9fe9d6cc36dc.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/38/24/4a/38244a3b3288862b1bec9fe9d6cc36dc.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/6d/99/50/6d995026d55482480d18a9d45002faaa.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/6d/99/50/6d995026d55482480d18a9d45002faaa.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/ba/78/18/ba78186badb1a7d76bb7950d706ddfcd.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/ba/78/18/ba78186badb1a7d76bb7950d706ddfcd.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/97/b5/c6/97b5c6bfe197b9cf6fa6089ba76b3926.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/97/b5/c6/97b5c6bfe197b9cf6fa6089ba76b3926.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/df/5f/58/df5f58289e15118297b7b76aeaf71da1.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/df/5f/58/df5f58289e15118297b7b76aeaf71da1.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/12/cd/c6/12cdc64424d53911d306de109d40a23b.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/12/cd/c6/12cdc64424d53911d306de109d40a23b.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/8d/24/33/8d24339165c96f4d636aa81381662b15.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/8d/24/33/8d24339165c96f4d636aa81381662b15.jpg" alt="" width="100px" height="180"></a>
-                        </div>
-                        </td>
-                    
-                </td>
-            </tr>
+                <a href="https://i.pinimg.com/736x/ca/b1/42/cab142d09c7585c809f088ae1203cea5.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/ca/b1/42/cab142d09c7585c809f088ae1203cea5.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/2c/e6/c8/2ce6c84ddee78e3901d031cd67f204f7.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/2c/e6/c8/2ce6c84ddee78e3901d031cd67f204f7.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
 
 
 
 
-            <tr valign="top">
-                <td id="maloi">
-                    <img class="bimg" src="https://i.pinimg.com/736x/f4/ed/13/f4ed1354def409504f86827e3df9a31c.jpg" alt="" width="400px"></td>
-                
-                <td>
-                    <div class="position-desc">
-            
-                        <p class="pdesc">
-                            <big>Mary Loi Yves Ricalde</big> <br>
-                            <br>
-                            Maloi is the third eldest member and one of the main vocalists. <br>
-                            Her passion for singing blossomed early—she started singing when she was three years old! <br>
-                            According to fans, Maloi is very friendly and easy to talk to. <br>
-
-                        
-                        </p>
-                    </div>
-                    
-                        
-                
-                    
-            <div class="other">
-                        <a href="https://i.pinimg.com/736x/e0/15/16/e015163923814f3430c1ec69fd6e20ff.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/e0/15/16/e015163923814f3430c1ec69fd6e20ff.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/0a/c7/db/0ac7dbf7dfcb3adb5a12992b419f572d.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/0a/c7/db/0ac7dbf7dfcb3adb5a12992b419f572d.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/eb/05/6f/eb056ff031b3bb69c0033a55c2e592ed.jpg"><img  class="img-glow"  src="https://i.pinimg.com/736x/eb/05/6f/eb056ff031b3bb69c0033a55c2e592ed.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/a1/ff/b6/a1ffb607a757e65a7649aed5252c51db.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/a1/ff/b6/a1ffb607a757e65a7649aed5252c51db.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/c1/a4/b5/c1a4b5ea47ec51fe6786787b3261350e.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/c1/a4/b5/c1a4b5ea47ec51fe6786787b3261350e.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/57/f9/e7/57f9e7a1cc442c38d2bc99d16c69cc02.jpg"><img class="img-glow"  src="https://i.pinimg.com/736x/57/f9/e7/57f9e7a1cc442c38d2bc99d16c69cc02.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/31/b4/f2/31b4f28ac43d6bd710ee89ec81e04f62.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/31/b4/f2/31b4f28ac43d6bd710ee89ec81e04f62.jpg" alt="" width="100px" height="180"></a>
-                        </div>
-                    
-              </td>
-             </td>
-            </tr>
-
-
-
-
-            <tr valign="top">
-                <td id="gwen"><img class="bimg" src="https://i.pinimg.com/736x/23/0e/64/230e64cbfd0ba545fe10365ee2838801.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        
-                    <p class="pdesc">
-                        <big>Gweneth L. Apuli</big> <br>
-                        <br>
-                        Gwen is the lead vocalist and lead rapper. <br>
-                         She’s known for having a rich, deep voice as well as a sharp ear for music. <br>
-                         Fans say Gwen is shy and mahinhin when you meet her but very warm-hearted.
-
-                    
+    <div class="tbl">
+        <div class="member" id="colet">
+            <img class="bimg" src="https://i.pinimg.com/736x/dc/13/b0/dc13b0106b1044d077014269c767b8d1.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Nicolette Vergara</big><br>
+                    <br>
+                        Colet is the group's main vocalist, lead dancer, and lead rapper. <br>
+                        She brings fierce energy and sharp dance moves to the stage. <br>
+                        Fans think Colet has a strong personality on-stage, <br>
+                        but is actually maalaga towards the members. <br>
+                        She’s also known as one of the tidiest members. <br>
                     </p>
-                    </div>
-               
                 
-        <div class="other">
-                    <a href="https://i.pinimg.com/736x/48/6a/a1/486aa10331b3668b67d946912638d749.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/48/6a/a1/486aa10331b3668b67d946912638d749.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/9d/18/02/9d18022a40b6f6a41f6df5e5956bf9f4.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/9d/18/02/9d18022a40b6f6a41f6df5e5956bf9f4.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/33/ca/b1/33cab1491d2a5f66969f7f98a0542c62.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/33/ca/b1/33cab1491d2a5f66969f7f98a0542c62.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/b2/a6/4e/b2a64e1b4cff2c68266d5771adb4e649.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/b2/a6/4e/b2a64e1b4cff2c68266d5771adb4e649.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/8c/43/7b/8c437b10763bacdc1eb8820560052986.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/8c/43/7b/8c437b10763bacdc1eb8820560052986.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/a3/1b/48/a31b48ed27376bb88ccad0b7b19b9017.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/a3/1b/48/a31b48ed27376bb88ccad0b7b19b9017.jpg" alt="" width="100px" height="180"></a>
-                    <a href="https://i.pinimg.com/736x/d8/ed/1b/d8ed1baa85ec05fa7d4dd2368a5a2099.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/d8/ed/1b/d8ed1baa85ec05fa7d4dd2368a5a2099.jpg" alt="" width="100px" height="180"></a>
-                    </div>
-                </td></td></tr>
-
-
-
-
-
-            <tr valign="top">
-                <td id="stacey"><img class="bimg" src="https://i.pinimg.com/736x/d7/01/af/d701af75fcd453b046ee00b2c126cd10.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc">
-                            <big>Stacey Aubrey Sevilleja</big><br>
-                            <br>
-                            Stacey is the main rapper, lead dancer, and sub-vocalist. <br>
-                            Despite being one of the younger members, <br>
-                            Stacey is known for her maturity and dedicated work ethic. <br>
-                            Fans say she’s very kind, down-to-earth, and friendly.    
-                        </p>
-                    </div>
-                        
-                        
-                    
-                    
+            </div>
             <div class="other">
-                        <a href="https://i.pinimg.com/564x/f1/a0/4d/f1a04d69dd460af8bfe3607ae1d2dde1.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/f1/a0/4d/f1a04d69dd460af8bfe3607ae1d2dde1.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/db/66/9b/db669bdc26c5b2e8418ccc69e761e372.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/db/66/9b/db669bdc26c5b2e8418ccc69e761e372.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/86/de/2a/86de2ada62502a066527be720788de3b.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/86/de/2a/86de2ada62502a066527be720788de3b.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/c9/d0/e0/c9d0e016ece183f2873167a7f73d3e8c.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/c9/d0/e0/c9d0e016ece183f2873167a7f73d3e8c.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/31/c7/cd/31c7cdcdfd92cc558dce6730eb166497.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/31/c7/cd/31c7cdcdfd92cc558dce6730eb166497.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/4f/f5/a2/4ff5a2c943f0b2dd41f7ebf449b9c272.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/4f/f5/a2/4ff5a2c943f0b2dd41f7ebf449b9c272.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/f6/80/d5/f680d58cf49dcf8ab7ec8e93462e918f.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/f6/80/d5/f680d58cf49dcf8ab7ec8e93462e918f.jpg" alt="" width="100px" height="180"></a>
-                        </div></td>
-            </tr>
+                <a href="https://i.pinimg.com/564x/38/24/4a/38244a3b3288862b1bec9fe9d6cc36dc.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/38/24/4a/38244a3b3288862b1bec9fe9d6cc36dc.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/6d/99/50/6d995026d55482480d18a9d45002faaa.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/6d/99/50/6d995026d55482480d18a9d45002faaa.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/564x/ba/78/18/ba78186badb1a7d76bb7950d706ddfcd.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/ba/78/18/ba78186badb1a7d76bb7950d706ddfcd.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/97/b5/c6/97b5c6bfe197b9cf6fa6089ba76b3926.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/97/b5/c6/97b5c6bfe197b9cf6fa6089ba76b3926.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
+
+
+
+    <div class="tbl">
+        <div class="member" id="maloi">
+            <img class="bimg" src="https://i.pinimg.com/736x/f4/ed/13/f4ed1354def409504f86827e3df9a31c.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Mary Loi Yves Ricalde</big> <br>
+                    <br>
+                    Maloi is the third eldest member and one of the main vocalists. <br>
+                    Her passion for singing blossomed early—she started singing when she was three years old! <br>
+                    According to fans, Maloi is very friendly and easy to talk to. <br>
+                </p>
+            </div>
+            <div class="other">
+                <a href="https://i.pinimg.com/736x/e0/15/16/e015163923814f3430c1ec69fd6e20ff.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/e0/15/16/e015163923814f3430c1ec69fd6e20ff.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/0a/c7/db/0ac7dbf7dfcb3adb5a12992b419f572d.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/0a/c7/db/0ac7dbf7dfcb3adb5a12992b419f572d.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/eb/05/6f/eb056ff031b3bb69c0033a55c2e592ed.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/eb/05/6f/eb056ff031b3bb69c0033a55c2e592ed.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/564x/a1/ff/b6/a1ffb607a757e65a7649aed5252c51db.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/a1/ff/b6/a1ffb607a757e65a7649aed5252c51db.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
+
+
+
+    <div class="tbl">
+        <div class="member" id="gwen">
+            <img class="bimg" src="" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Gweneth L. Apuli</big> <br>
+                    <br>
+                    Gwen is the lead vocalist and lead rapper. <br>
+                     She’s known for having a rich, deep voice as well as a sharp ear for music. <br>
+                     Fans say Gwen is shy and mahinhin when you meet her but very warm-hearted.
+                </p>
+            </div>
+            <div class="other">
+                <a href="https://i.pinimg.com/736x/48/6a/a1/486aa10331b3668b67d946912638d749.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/48/6a/a1/486aa10331b3668b67d946912638d749.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/9d/18/02/9d18022a40b6f6a41f6df5e5956bf9f4.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/9d/18/02/9d18022a40b6f6a41f6df5e5956bf9f4.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/33/ca/b1/33cab1491d2a5f66969f7f98a0542c62.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/33/ca/b1/33cab1491d2a5f66969f7f98a0542c62.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/b2/a6/4e/b2a64e1b4cff2c68266d5771adb4e649.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/b2/a6/4e/b2a64e1b4cff2c68266d5771adb4e649.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
+
+
+
+    <div class="tbl">
+        <div class="member" id="stacey">
+            <img class="bimg" src="https://i.pinimg.com/736x/d7/01/af/d701af75fcd453b046ee00b2c126cd10.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Stacey Aubrey Sevilleja</big><br>
+                    <br>
+                    Stacey is the main rapper, lead dancer, and sub-vocalist. <br>
+                    Despite being one of the younger members, <br>
+                    Stacey is known for her maturity and dedicated work ethic. <br>
+                    Fans say she’s very kind, down-to-earth, and friendly.    
+                </p>
+            </div>
+            <div class="other">
+                <a href="https://i.pinimg.com/564x/f1/a0/4d/f1a04d69dd460af8bfe3607ae1d2dde1.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/f1/a0/4d/f1a04d69dd460af8bfe3607ae1d2dde1.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/564x/db/66/9b/db669bdc26c5b2e8418ccc69e761e372.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/db/66/9b/db669bdc26c5b2e8418ccc69e761e372.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/86/de/2a/86de2ada62502a066527be720788de3b.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/86/de/2a/86de2ada62502a066527be720788de3b.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/564x/c9/d0/e0/c9d0e016ece183f2873167a7f73d3e8c.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/c9/d0/e0/c9d0e016ece183f2873167a7f73d3e8c.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
+
+
+
+    <div class="tbl">
+        <div class="member" id="mikha">
+            <img class="bimg" src="https://i.pinimg.com/736x/be/84/53/be8453dcea8877bbcceecaf9150c62e2.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Mikhaela Janna Lim</big> <br>
+                    <br>
+                    Mikha is the third youngest member, visual, main rapper, and lead dancer of the group. <br>
+                    She’s known for her video game skills! <br>
+                    Members have mentioned that she’s surprisingly good at them. <br>
+                    Fans view Mikha as kalog and an inner softie. 
+                </p>
+            </div>
+            <div class="other">
+                <a href="https://i.pinimg.com/736x/37/83/6b/37836b8bfc736b008c360299f1c04d24.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/37/83/6b/37836b8bfc736b008c360299f1c04d24.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/92/ed/05/92ed05ba52fc1fe1400960c7a5c82293.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/92/ed/05/92ed05ba52fc1fe1400960c7a5c82293.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/c6/a5/c8/c6a5c8675b820446c7f588db9f9ca0fa.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/c6/a5/c8/c6a5c8675b820446c7f588db9f9ca0fa.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/f2/ff/83/f2ff8303f8c085e2ccbc8918e733755e.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/f2/ff/83/f2ff8303f8c085e2ccbc8918e733755e.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
 
 
 
 
+    <div class="tbl">
+        <div class="member" id="jhoanna">
+            <img class="bimg" src="https://i.pinimg.com/736x/4d/02/bf/4d02bfe1b6df1fa4975806da190984b5.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Jhoanna Christine Robles</big><br>
+                    <br>
+                    Jhoanna is the group’s second youngest member and leader! <br>
+                    She’s also the lead vocalist and rapper. <br>
+                     She’s known to guide the group with warmth and affection. <br>
+                      Fans who’ve met her say she’s approachable, down-to-earth, and jolly.
+                </p>
+            </div>
+            <div class="other">
+                <a href="https://i.pinimg.com/736x/de/40/fe/de40fef53470907aebc5f234f9083f2d.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/de/40/fe/de40fef53470907aebc5f234f9083f2d.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/75/ca/cc/75cacc6b40957e916ab50e392685a1ec.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/75/ca/cc/75cacc6b40957e916ab50e392685a1ec.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/e0/b9/9c/e0b99cd604ea4c6bd53a499f88890a0d.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/e0/b9/9c/e0b99cd604ea4c6bd53a499f88890a0d.jpg" alt="" width="100px" height="180">
+                </a>
+
+                <a href="https://i.pinimg.com/736x/6a/f9/c4/6af9c4dd1244ee5625544f9b72b21669.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/6a/f9/c4/6af9c4dd1244ee5625544f9b72b21669.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
+        
 
 
-            <tr valign="top">
-                <td id="mikha"><img class="bimg" src="https://i.pinimg.com/736x/be/84/53/be8453dcea8877bbcceecaf9150c62e2.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc">
-                            <big>Mikhaela Janna Lim</big> <br>
-                            <br>
-                            Mikha is the third youngest member, visual, main rapper, and lead dancer of the group. <br>
-                            She’s known for her video game skills! <br>
-                            Members have mentioned that she’s surprisingly good at them. <br>
-                            Fans view Mikha as kalog and an inner softie.
     
-                        
-                        </p>
-
-                    </div>
-                                                
-                    
+    <div class="tbl">
+        <div class="member" id="sheena">
+            <img class="bimg" src="https://i.pinimg.com/736x/7f/f9/1a/7ff91af776974382e28810d85a833996.jpg" alt="" width="400px">
+            <div class="position-desc">
+                <p class="pdesc">
+                    <big>Sheena Mae Catacutan</big><br>
+                    <br>
+                    Sheena is the bunso of the group, the main dancer, and the sub-vocalist. <br>
+                    She’s always loved dancing and brings her vivacious energy to all her performances. <br>
+                    She's considered professional and playful, even photobombing fan pictures taken with other members.
+                </p>
+            </div>
             <div class="other">
-                        <a href="https://i.pinimg.com/736x/37/83/6b/37836b8bfc736b008c360299f1c04d24.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/37/83/6b/37836b8bfc736b008c360299f1c04d24.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/92/ed/05/92ed05ba52fc1fe1400960c7a5c82293.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/92/ed/05/92ed05ba52fc1fe1400960c7a5c82293.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/c6/a5/c8/c6a5c8675b820446c7f588db9f9ca0fa.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/c6/a5/c8/c6a5c8675b820446c7f588db9f9ca0fa.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/f2/ff/83/f2ff8303f8c085e2ccbc8918e733755e.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/f2/ff/83/f2ff8303f8c085e2ccbc8918e733755e.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/bb/53/68/bb5368efd584c91444483703046c6227.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/bb/53/68/bb5368efd584c91444483703046c6227.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/64/96/43/6496439d6c9ec65227377ea4fdadfd26.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/64/96/43/6496439d6c9ec65227377ea4fdadfd26.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/e3/f3/6e/e3f36eb184c18f517e58b5b56fdbc542.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/e3/f3/6e/e3f36eb184c18f517e58b5b56fdbc542.jpg" alt="" width="100px" height="180"></a>
-                        </div></td>
-            </tr>
+                <a href="https://i.pinimg.com/736x/85/89/65/858965e1346a4d7d577c42dd034fd91b.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/85/89/65/858965e1346a4d7d577c42dd034fd91b.jpg" alt="" width="100px" height="180">
+                </a>
 
+                <a href="https://i.pinimg.com/564x/bf/1c/d3/bf1cd33d9b6e0ed055959ea2cde571ed.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/bf/1c/d3/bf1cd33d9b6e0ed055959ea2cde571ed.jpg" alt="" width="100px" height="180">
+                </a>
 
+                <a href="https://i.pinimg.com/736x/8c/86/b1/8c86b19d0bb0c027b5898d1438368fec.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/736x/8c/86/b1/8c86b19d0bb0c027b5898d1438368fec.jpg" alt="" width="100px" height="180">
+                </a>
 
-
-
-
-            <tr valign="top">
-                <td id="jhoanna"><img class="bimg" src="https://i.pinimg.com/736x/4d/02/bf/4d02bfe1b6df1fa4975806da190984b5.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc">
-                            <big>Jhoanna Christine Robles</big><br>
-                            <br>
-                            Jhoanna is the group’s second youngest member and leader! <br>
-                            She’s also the lead vocalist and rapper. <br>
-                             She’s known to guide the group with warmth and affection. <br>
-                              Fans who’ve met her say she’s approachable, down-to-earth, and jolly.
-    
-                        
-                        </p>
-                    </div>
-                    
-                        
-                        
-                    
-                    
-            <div class="other">
-                        <a href="https://i.pinimg.com/736x/de/40/fe/de40fef53470907aebc5f234f9083f2d.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/de/40/fe/de40fef53470907aebc5f234f9083f2d.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/75/ca/cc/75cacc6b40957e916ab50e392685a1ec.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/75/ca/cc/75cacc6b40957e916ab50e392685a1ec.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/e0/b9/9c/e0b99cd604ea4c6bd53a499f88890a0d.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/e0/b9/9c/e0b99cd604ea4c6bd53a499f88890a0d.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/6a/f9/c4/6af9c4dd1244ee5625544f9b72b21669.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/6a/f9/c4/6af9c4dd1244ee5625544f9b72b21669.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/1b/27/cc/1b27cc820682817a40012522a8fdd23a.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/1b/27/cc/1b27cc820682817a40012522a8fdd23a.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/14/d9/34/14d9347c6d37d5176ec3fdbd75ab9a2f.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/14/d9/34/14d9347c6d37d5176ec3fdbd75ab9a2f.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/ba/aa/02/baaa026a5002af1f90717c4258837ac3.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/ba/aa/02/baaa026a5002af1f90717c4258837ac3.jpg" alt="" width="100px" height="180"></a>
-                        </div></td>
-            </tr>
-
-            <tr valign="top">
-                <td id="sheena"><img class="bimg" src="https://i.pinimg.com/736x/7f/f9/1a/7ff91af776974382e28810d85a833996.jpg" alt="" width="400px"></td>
-                <td>
-                    <div class="position-desc">
-                        <p class="pdesc">
-                            <big>Sheena Mae Catacutan</big><br>
-                            <br>
-                            Sheena is the bunso of the group, the main dancer, and the sub-vocalist. <br>
-                            She’s always loved dancing and brings her vivacious energy to all her performances. <br>
-                            She's considered professional and playful, even photobombing fan pictures taken with other members.
-                        </p>
-                    </div>
-                        
-                        
-                    
-                    
-            <div class="other">
-                        <a href="https://i.pinimg.com/736x/85/89/65/858965e1346a4d7d577c42dd034fd91b.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/85/89/65/858965e1346a4d7d577c42dd034fd91b.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/bf/1c/d3/bf1cd33d9b6e0ed055959ea2cde571ed.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/bf/1c/d3/bf1cd33d9b6e0ed055959ea2cde571ed.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/8c/86/b1/8c86b19d0bb0c027b5898d1438368fec.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/8c/86/b1/8c86b19d0bb0c027b5898d1438368fec.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/564x/f9/15/0b/f9150bbcf5d4c448cebd58159ca1a87d.jpg"><img  class="img-glow" src="https://i.pinimg.com/564x/f9/15/0b/f9150bbcf5d4c448cebd58159ca1a87d.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/03/8f/d2/038fd27d848a61308f9fe5a0ab5dc2a7.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/03/8f/d2/038fd27d848a61308f9fe5a0ab5dc2a7.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/79/09/af/7909af90f5d8acadff5787555bce12fa.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/79/09/af/7909af90f5d8acadff5787555bce12fa.jpg" alt="" width="100px" height="180"></a>
-                        <a href="https://i.pinimg.com/736x/a5/bf/8f/a5bf8fb094611b13dff582979d4ff7c3.jpg"><img  class="img-glow" src="https://i.pinimg.com/736x/a5/bf/8f/a5bf8fb094611b13dff582979d4ff7c3.jpg" alt="" width="100px" height="180"></a>
-                        </div>
-                    </td>
-            </tr>
-
-        </table>
+                <a href="https://i.pinimg.com/564x/f9/15/0b/f9150bbcf5d4c448cebd58159ca1a87d.jpg" target="_blank">
+                    <img class="img-glow" src="https://i.pinimg.com/564x/f9/15/0b/f9150bbcf5d4c448cebd58159ca1a87d.jpg" alt="" width="100px" height="180">
+                </a>
+                <!-- Repeat for each other image link -->
+            </div>
+        </div>
+        <!-- Repeat for each member -->
+    </div>
 
 
         <footer title="This webpage is for final project in the subject of WS1">
-            <p>&copy; <b>2024</b> RAFAEL PAGSANGJAN All rights reserved</p>
+            <p>&copy; <b>2024</b> RAFAEL PAGSANGJAN rights reserved</p>
         </footer>
 
-
-
-
-
     </div>
-
-    
-
-
-
-  
 </body>
 </html>
